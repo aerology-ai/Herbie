@@ -588,6 +588,7 @@ class Herbie:
                 f"{self.fxx}".encode(), digest_size=1
             ).hexdigest()
 
+            print(all_grib_msg)
             hash_label = hashlib.blake2b(
                 all_grib_msg.encode(), digest_size=2
             ).hexdigest()
